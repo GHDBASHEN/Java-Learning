@@ -38,5 +38,13 @@ public class Main {
         System.out.println("Cost per item: " + currency + costPerItem);
         System.out.println("Total cost = " + currency + totalCost);
 
+        // do while loop
+        int i = 0;
+        do {
+            System.out.println(i);
+            i++;
+        }
+        while (i < 5);
+
     }
 }
