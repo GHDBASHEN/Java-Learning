@@ -26,5 +26,17 @@ public class Main {
         System.out.println(myVar1);
         System.out.println(myVar2);
         System.out.println(myVar3);
+
+        // Create variables of different data types
+        int items = 50;
+        float costPerItem = 10.3f;
+        float totalCost = items * costPerItem;
+        char currency = '$';
+
+        // Print variables
+        System.out.println("Number of items: " + items);
+        System.out.println("Cost per item: " + currency + costPerItem);
+        System.out.println("Total cost = " + currency + totalCost);
+
     }
 }
