@@ -46,5 +46,9 @@ public class Main {
         }
         while (i < 5);
 
+        for(;;){
+            System.out.println("Hello World...!!!");
+        }
+
     }
 }
