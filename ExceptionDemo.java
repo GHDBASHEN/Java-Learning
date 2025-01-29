@@ -7,14 +7,13 @@ public class ExceptionDemo {
     public void divTwoNums(int x, int y) {
         System.out.println("Begin");
 
-        // int z = x / y;  // This line is now commented out
+        int z = x / y;  // Division by zero still causes an ArithmeticException
 
         try {
             System.out.print(" 1 ");
-        } catch (Exception e) {
-            System.out.print(" 2 ");
+        } finally {
+            System.out.print(" 3 ");
         }
         System.out.print(" End ");
     }
-
 }
