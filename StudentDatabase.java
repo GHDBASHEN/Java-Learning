@@ -2,20 +2,15 @@ import java.sql.*;
 
 public class StudentDatabase {
     public static void main(String[] args) {
-        // Database credentials
-        String url = "jdbc:mysql://localhost:3306/student"; // Change DB name if needed
-        String user = "root";  // Replace with your MySQL username
-        String password = "";  // Replace with your MySQL password
-
         // SQL Query to join tables and fetch student data with marks
         String query = "SELECT b.stu_id, b.stu_name, b.stu_address, " + "m.chemistry, m.physics, m.maths " + "FROM basicdata b JOIN marks m ON b.stu_id = m.stu_id";
 
         try {
             // Load MySQL JDBC Driver
-            Class.forName("com.mysql.cj.jdbc.Driver");
+
 
             // Establish Connection
-            Connection conn = DriverManager.getConnection(url, user, password);
+            Connection conn = DatabaseConnection.getInstance().getConnection();
             System.out.println("Connected to database successfully!");
 
             // Create Statement
